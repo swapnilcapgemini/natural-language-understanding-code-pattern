@@ -13,8 +13,8 @@ const pEnv = process.env;
 if (pEnv.service_watson_natural_language_understanding && !pEnv.VCAP_SERVICES && !pEnv.NATURAL_LANGUAGE_UNDERSTANDING_APIKEY && !pEnv.NATURAL_LANGUAGE_UNDERSTANDING_URL && !pEnv.NATURAL_LANGUAGE_UNDERSTANDING_USERNAME) {
   // If we don't have the expected environment variables, use the starter kit apikey and url.
   let skitJson = JSON.parse(pEnv.service_watson_natural_language_understanding);
-  process.env.NATURAL_LANGUAGE_UNDERSTANDING_APIKEY = skitJson.apikey;
-  process.env.NATURAL_LANGUAGE_UNDERSTANDING_URL = skitJson.url;
+  process.env.NATURAL_LANGUAGE_UNDERSTANDING_APIKEY = "9R8Eo8_d-OOazmDdgg0fPmGYUcfMr04PYal_9mjhVHP0";
+  process.env.NATURAL_LANGUAGE_UNDERSTANDING_URL = "https://api.au-syd.natural-language-understanding.watson.cloud.ibm.com/instances/40ac77e9-23a5-41cf-b739-75053628cf9d";
 }
 
 let client;
